@@ -5,7 +5,7 @@
 
 # Stories
 
-<!-- ## Users are greeted with a welcome screen
+## Users are greeted with a welcome screen
 
 As a League Moderator or Pokemon Trainer
 In order to access the system
@@ -17,9 +17,9 @@ Acceptance Criteria:
 
 Usage:
 * Accessing the program from the command line:
-    plt -->
+    plt
 
-<!-- ## League Moderator enters Pokemon Trainer's profile
+## League Moderator enters Pokemon Trainer's profile
 
 As a League Moderator
 In order to keep track of all of the league's contestants
@@ -41,9 +41,9 @@ Usage:
   What is the trainer's name?
     Ash
 * Display confirmation message for profile creation with Trainer ID, Example:
-  Ash's profile is ready to be edited! Trainer ID: 123 -->
+  Ash's profile is ready to be edited! Trainer ID: 123
 
-<!-- ## Trainers access their respective profile
+## Trainers access their respective profile
 
 As a Pokemon Trainer
 In order to keep track of my progress in the league
@@ -72,10 +72,10 @@ Usage:
     TRAINER PROFILE
     Name: Ash
     TID: 123
-    Pokemon: <none> -->
+    Pokemon: <none>
     BattleLog: <none>
 
-<!-- ## Trainer inputs Trainer's pokemon from their National Pokedex ID
+## Trainer inputs Trainer's pokemon from their National Pokedex ID
 
 As a Pokemon Trainer
 In order to record each pokemon in my team
@@ -99,9 +99,9 @@ Usage:
 * Trainer types in the integer representing their pokemon. Example:
   What is the ID of the pokemon you would like to add (National Pokedex ID)?
     26 <-- Pikachu
-* Trainer is sent back to their profile menu -->
+* Trainer is sent back to their profile menu
 
-<!-- ## Trainer selects one of their pokemon to view it's statistics
+## Trainer selects one of their pokemon to view it's statistics
 
 As A Pokemon Trainer
 In order to add moves and see statistics about my pokemon
@@ -124,7 +124,7 @@ Usage:
 * Trainer types in the Pokemon's display number. Example:
 
     What is the display number of the pokemon you wish to view?
-      1 <-- Pikachu -->
+      1 <-- Pikachu
 
 ## Trainer inputs each of their pokemon's movesets
 
@@ -138,7 +138,7 @@ Acceptance Criteria:
 * Trainer is prompted to add a move to selected pokemon
 * Repeat until pokemon has four (and only four) moves
 * If the move is illegal on specific pokemon or incorrect, the Trainer is shown the appropriate error message
-* Display updated pokemon with newly registered moveset
+* Display updated pokemon with newly registered moveset -->
 
 Usage:
 * Adding moves to a pokemon from the command line (while at their profile):
