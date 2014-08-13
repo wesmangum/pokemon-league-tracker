@@ -5,7 +5,21 @@
 
 # Stories
 
-## League Moderator enters Pokemon Trainer's profile
+<!-- ## Users are greeted with a welcome screen
+
+As a League Moderator or Pokemon Trainer
+In order to access the system
+I want to see a welcome screen when the program is run
+
+Acceptance Criteria:
+* User types in the command to start the program
+* User is prompted with the greeting screen
+
+Usage:
+* Accessing the program from the command line:
+    plt -->
+
+<!-- ## League Moderator enters Pokemon Trainer's profile
 
 As a League Moderator
 In order to keep track of all of the league's contestants
@@ -17,13 +31,22 @@ Acceptance Criteria:
 * Displays profile for Moderator to confirm information
 
 Usage:
-* Adding profile from command line:
-  plt -a [NAME]
+* Adding profile from command line menu:
 
-## Trainers access their respective profile
+    1
 
-As a Pokemon Triner
-In order to keep track of my progress in the leagu
+* Moderator is prompted with:
+  What is the trainer's name?
+* Moderator types in the Trainer's name. Example:
+  What is the trainer's name?
+    Ash
+* Display confirmation message for profile creation with Trainer ID, Example:
+  Ash's profile is ready to be edited! Trainer ID: 123 -->
+
+<!-- ## Trainers access their respective profile
+
+As a Pokemon Trainer
+In order to keep track of my progress in the league
 I want to access my league profile
 
 Acceptance Criteria:
@@ -31,31 +54,77 @@ Acceptance Criteria:
 * Displays Trainer's profile with all statistics
 
 Usage:
-* Accessing profile from the command line:
-  plt -p [TID]
+* Accessing profile from the command line menu:
 
-## Trainer inputs Trainer's pokemon from PID
+    2
+
+* Trainer is prompted with:
+
+    Enter the ID of the Trainer you would like to update.
+
+* Trainer puts in their unique ID they received at registration. Example:
+
+    Enter the ID of the Trainer you would like to update.
+    123
+
+* Trainer's profile is displayed. Example:
+
+    TRAINER PROFILE
+    Name: Ash
+    TID: 123
+    Pokemon: <none> -->
+    BattleLog: <none>
+
+<!-- ## Trainer inputs Trainer's pokemon from their National Pokedex ID
 
 As a Pokemon Trainer
 In order to record each pokemon in my team
-I want to record each pokemon's PID under my profile
+I want to record each pokemon's National Pokedex ID under my profile
 
 Acceptance Criteria:
 * Trainer navigates to their profile through the command line
 * Trainer is prompted to add pokemon to profile
-* Trainer types in a PID (integer)
+* Trainer types in a National Pokedex ID (integer)
 * Repeat until Trainer has six (and only six) pokemon
-* If one or more of the PIDs are illegal pokemon or incorrect PIDs, the Trainer is shown the appropriate error message
+* If one or more of the National Pokedex IDs are illegal pokemon or incorrect National Pokedex IDs, the Trainer is shown the appropriate error message
 * Display updated Trainer profile with newly registered pokemon
 
 Usage:
 * Adding pokemon from the command line (while at their profile):
-  plt --pokemon --add
+
+    1
+
 * Trainer is prompted with:
-  What is the ID of the pokemon you would like to add (PID)?
+  What is the ID of the pokemon you would like to add (National Pokedex ID)?
 * Trainer types in the integer representing their pokemon. Example:
-  What is the ID of the pokemon you would like to add (PID)?
+  What is the ID of the pokemon you would like to add (National Pokedex ID)?
     26 <-- Pikachu
+* Trainer is sent back to their profile menu -->
+
+<!-- ## Trainer selects one of their pokemon to view it's statistics
+
+As A Pokemon Trainer
+In order to add moves and see statistics about my pokemon
+I want to view each pokemon's statistics
+
+Acceptance Criteria:
+* Trainer navigates to profile and selects to view a Pokemon
+* Trainer selects a pokemon (via their display number) to view
+* Displays Pokemon and statistics
+
+Usage:
+* Selecting a pokemon from Trainer profile:
+
+    2
+
+* Trainer is prompted with:
+
+    What is the display number of the pokemon you wish to view?
+
+* Trainer types in the Pokemon's display number. Example:
+
+    What is the display number of the pokemon you wish to view?
+      1 <-- Pikachu -->
 
 ## Trainer inputs each of their pokemon's movesets
 
@@ -73,12 +142,17 @@ Acceptance Criteria:
 
 Usage:
 * Adding moves to a pokemon from the command line (while at their profile):
-  plt --pokemon [PID] --move
+
+    plt --pokemon [National Pokedex ID] --move
+
 * Trainer is prompted with:
-  What is the name of the pokemon's move?
+
+    What is the name of the pokemon's move?
+
 * Trainer types in the name of the move. Example:
-  What is the name of your pokemon's move?
-    Tackle
+
+    What is the name of your pokemon's move?
+      Tackle
 
 ## Moderator inputs the outcome of a battle
 
@@ -91,3 +165,8 @@ Acceptance Criteria:
 * Moderator is prompted to select each Trainer (via their display number)
 * Prompts the Moderator which triner lost or won a battle.
 * Displays both Triner's updated profiles with current wins and losses
+
+Usage:
+* Recording a battle from the command line:
+  record battle
+* Moderator is prompted with:

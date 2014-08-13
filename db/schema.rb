@@ -11,23 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140807103600) do
+ActiveRecord::Schema.define(version: 20140812145400) do
 
-  # create_table "achievements", force: true do |t|
-  #   t.integer  "skill_id"
-  #   t.boolean  "mastered"
-  #   t.datetime "created_at"
-  #   t.datetime "updated_at"
-  # end
+  create_table "pokemons", force: true do |t|
+    t.string  "name"
+    t.string  "pokedex_id"
+    t.integer "trainer_id"
+    t.string  "pokemon_type"
+    t.string  "moves",        default: ""
+  end
 
-  # create_table "skills", force: true do |t|
-  #   t.string  "name"
-  #   t.integer "training_path_id"
-  #   t.text    "description"
-  # end
-
-  # create_table "training_paths", force: true do |t|
-  #   t.string "name"
-  # end
+  create_table "trainers", force: true do |t|
+    t.string "name"
+  end
 
 end

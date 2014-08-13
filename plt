@@ -9,7 +9,6 @@ def clean_gets
   (gets || "").chomp
 end
 
-# puts IO.readlines('pokeball.txt')
+puts IO.readlines('pokemon.txt')
 
-# training_paths_controller = TrainingPathsController.new()
-# training_paths_controller.list
+Router.main_menu
